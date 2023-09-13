@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id ="ac" class="com.vathsa.ASD.beans.Aadharcard" >
+           <property name="name"     value="Rahul"/>
+           <property name="age"      value="25"/>
+           <property name="gender"   value="Male"/>
+           <property name="aadharNo" value="1234"/>
+      </bean>
+      
+      <bean id="cz"  class="com.vathsa.ASD.beans.Citizen">
+          <property name="mobileNo"    value="8976"/>  
+          <property name="emailId"     value="abc@rediffmail.com"/> 
+          <property name="Aadharcard"  ref="ac"/>
+      
+      </bean>
+
+</beans>
